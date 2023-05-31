@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const base_url = 'http://localhost:3001/student'
+// const base_url = 'http://localhost:3001/student'
+const base_url = 'https://student-portal-backend.onrender.com/student';
+
 
 //Index api
 export const getIndexAPI = () => {
