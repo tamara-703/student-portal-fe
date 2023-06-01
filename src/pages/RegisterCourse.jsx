@@ -122,28 +122,3 @@ export default function RegisterCourse() {
     </div>
   );
 }
-
-{
-  /* <form onSubmit={(e) => handleRegister(e)}>
-                <label>Name</label>
-                <input type='text' name='name'></input>
-                <label>Major</label>
-                <input type="text" name='major'></input>
-                <label>Program</label>
-                <select name='program'>
-                    <option>Undergraduate</option>
-                    <option>Graduate</option>
-                    <option>Certificate</option>
-                    </select>
-                <label>Graduation Year</label>
-                <input type='number' name="graduationYr"></input>
-                <label>Years Completed</label>
-                <input type="number" name='yearsCompleted'></input>
-                <label>Phone</label>
-                <input type="text" name='phone' max={10} min={3} placeholder="123-456-6789"
-  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></input>
-                <label>Email</label>
-                <input type="email" name='email' placedholder='jsmith@uni.edu'></input>
-                <input type="submit" value='SUBMIT' className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900 font-mono"></input>
-            </form> */
-}
