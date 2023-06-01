@@ -17,10 +17,9 @@ export const getIndexAPI = () => {
 export const getDeleteAPI = (data) => {
 
     const url = `${base_url}/${data}`;
-    const response = axios.delete(url);
-
-    //return deleted student
-    return response;
+    axios.delete(url).then((response) => {
+        return response
+    })
 
 }
 
@@ -28,7 +27,7 @@ export const getDeleteAPI = (data) => {
 //update api
 export const getUpdateAPI = (id, body) => {
     const url = `${base_url}/${id}`
-    const response = axios.put(url, body);
+    const response = axios.put(url, body)
 
     return response;
 }
@@ -36,9 +35,8 @@ export const getUpdateAPI = (id, body) => {
 //create api
 export const getCreateAPI = (data) => {
     const url = `${base_url}`
-    const response = axios.post(url, data);
 
-    console.log("create response: " + response)
+    const response = axios.post(url, data);
 
     return response;
 }
@@ -46,9 +44,8 @@ export const getCreateAPI = (data) => {
 //edit api
 export const getEditAPI = (data) => {
     const url = `${base_url}/${data}`
+
     const response = axios.get(url);
 
     return response;
 }
-
-//show api

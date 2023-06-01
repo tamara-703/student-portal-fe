@@ -23,20 +23,40 @@ export default function Main(props) {
 
   //the main page will display student courses, major, graduation year and years completed
   return (
-    <div>
-      Main page
-      {studentData ? (
-        studentData.map((student, i) => {
-          return (
-            <div>
-              <div key={i}>{student.name}</div>
-              <Link to="/student/profile" state={student}>Student Profile</Link>
-            </div>
-          );
-        })
-      ) : (
-        <div>no information found</div>
-      )}
+    <div className="main-table">
+      <table class="table-fixed">
+        <thead className="border border-slate-300">
+          <tr className="border border-slate-300">
+            <th className="border border-slate-300">Student name</th>
+            <th className="border border-slate-300">Graduation year</th>
+            <th className="border border-slate-300">Profile link</th>
+          </tr>
+        </thead>
+        <tbody className="border border-slate-300">
+          {studentData ? (
+            studentData.map((student, i) => {
+              return (
+                <tr className="border border-slate-300">
+                  <td className="border border-slate-300">{student.name}</td>
+                  <td className="border border-slate-300">{student.graduationYear}</td>
+                  <td className="border border-slate-300">
+                    <Link
+                      to="/student/profile"
+                      className="font-mono"
+                      state={student}
+                      id="link-in-main"
+                    >
+                      Student profile
+                    </Link>
+                  </td>
+                </tr>
+              );
+            })
+          ) : (
+            <div>no information found</div>
+          )}
+        </tbody>
+      </table>
     </div>
   );
 }
