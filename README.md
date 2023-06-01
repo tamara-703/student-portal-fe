@@ -13,6 +13,14 @@ Render
 
 ```
 
+### ###**NOTE**### 
+The deployed link takes a while to load so if that happens, you can install the project on your local machine
+
+## Local installation
+1. Clone the repo to your local computer
+2. After successfully cloning the project, run **npm install** to install all necessary json packages
+3. run **npm start** to start the application on your local host!
+
 # Screenshots
 
 ### homepage displays all current students in the database
